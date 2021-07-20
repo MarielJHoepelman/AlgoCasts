@@ -13,7 +13,19 @@
 //       '  #  '
 //       ' ### '
 //       '#####'
-
-function pyramid(n) {}
-
+//    #
+//   ###
+//  #####
+// #######
+function pyramid(n) {
+  for (row = 0; row <= n - 1; row++) {
+    let matrix = "";
+    for (column = 1; column <= n * 2 - 1; column++) {
+      const left = n - row;
+      const right = n + row;
+      matrix += column >= left && column <= right ? "#" : " ";
+    }
+    console.log(matrix);
+  }
+}
 module.exports = pyramid;
