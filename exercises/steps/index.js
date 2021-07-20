@@ -16,7 +16,7 @@
 //       '##  '
 //       '### '
 //       '####'
-
+//
 function steps(n) {
   for (i = 1; i <= n; i++) {
     let print = "";
@@ -27,5 +27,24 @@ function steps(n) {
     console.log(print);
   }
 }
-
 module.exports = steps;
+
+//create a metrix
+// i creates the rows
+// j the columns
+
+//with recursion
+
+// function steps(n, row = 0, stair = '') {
+//   if (n === row) {
+//     return;
+//   }
+//
+//   if (n === stair.length) {
+//     console.log(stair);
+//     return steps(n, row + 1);
+//   }
+//
+//   const add = stair.length <= row ? '#' : ' ';
+//   steps(n, row, stair + add);
+// }
